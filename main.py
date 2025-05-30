@@ -3,7 +3,7 @@ import os
 import time
 
 # API key
-client = groq.Groq(api_key="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")  
+client = groq.Groq(os.getenv("GROQ_API_KEY"))  
 
 # Welcome message
 print("🤖 Welcome to thy Royal AI Chatbot! Type 'exit' to take thy leave.\n")
