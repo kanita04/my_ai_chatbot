@@ -1,9 +1,12 @@
 import groq
 import os
 import time
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # API key
-client = groq.Groq(os.getenv("GROQ_API_KEY"))  
+client = groq.Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # Welcome message
 print("🤖 Welcome to thy Royal AI Chatbot! Type 'exit' to take thy leave.\n")
